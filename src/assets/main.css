@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+  --color-main: #12F7D6;
+  --color-second: #98FAEC;
+  --color-bgMain: #292F36;
+  --color-bgSecond: #1A1E23;
+  --color-gray: #43454D;
+  --color-white: #ffffff;
+  --color-html: #E54F26;
+  --color-css: #0C73B8;
+  --color-js: #E7A020;
+  --font-plexMono: "IBM Plex Mono", monospace;
+  --font-ubuntu: "Ubuntu", sans-serif;
+  --text-3.5xl: 32px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1024px;
+}
+
+
+@layer base {
+
+  html,
+  body {
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-main) var(--color-bgMain);
+  }
+}
+
+
+
+
+
+
+@layer utilities {
+  .boxContainer {
+    @apply w-full mx-auto px-6 md:px-10 lg:px-14 xl:px-24
+  }
+
+  .tooltip {
+    @apply absolute left-full top-1/2 -translate-y-1/2 ml-3 px-3 py-1.5 text-sm whitespace-nowrap bg-bgSecond text-white rounded shadow opacity-0 invisible transition-all duration-300 translate-x-2 group-hover:opacity-100 group-hover:visible group-hover:translate-x-0;
+  }
+}
