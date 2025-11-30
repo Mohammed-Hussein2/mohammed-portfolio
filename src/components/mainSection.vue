@@ -111,16 +111,8 @@
           <div
             class="flex lg:mt-9 justify-start flex-col md:flex-row space-y-4 md:space-y-0 items-center md:gap-3"
           >
-            <a href="#" class="font-plexMono capitalize font-normal">
+            <a href="#projects" class="font-plexMono capitalize font-normal">
               <baseButton> view Projects </baseButton>
-            </a>
-
-            <a href="#" class="font-plexMono capitalize font-normal">
-              <baseButton
-                buttonClass="bg-bgMain border-3 hover:bg-main hover:text-bgMain  border-main text-main"
-              >
-                Contact me
-              </baseButton>
             </a>
           </div>
         </div>
